@@ -23,8 +23,8 @@ function MakeFMPXMLRESULTFromArray( $tmp ) {
 	$w->endElement();
 	$w->startElement( 'DATABASE' );
 	$w->writeAttribute( 'DATEFORMAT', 'D/m/yyyy' );
-	$w->writeAttribute( 'LAYOUT', '' );
-	$w->writeAttribute( 'NAME', 'CRR' );
+	$w->writeAttribute( 'LAYOUT', 'tablename' );
+	$w->writeAttribute( 'NAME', 'databasename' );
 	$w->writeAttribute( 'RECORDS', 1 );
 	$w->writeAttribute( 'TIMEFORMAT', 'h:mm:ss a' );
 	$w->endElement();

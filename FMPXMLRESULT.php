@@ -40,6 +40,7 @@ function MakeFMPXMLRESULTFromArray( $tmp ) {
 	$w->endElement();
 	$w->startElement( 'RESULTSET' );
 	$w->writeAttribute( 'FOUND', 1 );
+/* This can easily be modified to work for multiple records */
 	$w->startElement( 'ROW' );
 	$w->writeAttribute( 'MODID', '0' );
 	$w->writeAttribute( 'RECORDID', 1 );
@@ -51,6 +52,7 @@ function MakeFMPXMLRESULTFromArray( $tmp ) {
 		$w->endElement();
 	}
 	$w->endElement();
+/* This can easily be modified to work for multiple records */
 	$w->endElement();
 	$w->endElement();
 }

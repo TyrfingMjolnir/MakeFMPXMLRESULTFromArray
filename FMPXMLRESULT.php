@@ -1,14 +1,12 @@
 <?php
-/*
-Example use
-
-$tmp = array(
-	'fieldname1' => 'fieldname1Content',
-	'fieldname2' => 'fieldname2Content'
-);
-
-MakeFMPXMLRESULTFromArray( $tmp );
-*/
+/**
+ *****************************************************************************************
+ *  @tmp        Key => Value pair of fieldname => fieldnameContent
+ *
+ *  @usage      This function converts a flat array to 1 record
+ * 
+ *  @return     A 1 record FMPXMLRESULT XML document to php://output
+ ****************************************************************************************/
 function MakeFMPXMLRESULTFromArray( $tmp ) {
 	$w = new XmlWriter();
 	$w->openURI( 'php://output' );

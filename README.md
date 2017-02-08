@@ -10,6 +10,16 @@ $tmp = array(
 
 MakeFMPXMLRESULTFromArray( $tmp );
 
+
+
+$tmp = array(
+	'fieldname1' => 'fieldname1Content',
+	'fieldname2' => 'fieldname2Content'
+);
+
+MakeFMPXMLRESULTFromArray( $tmp );
+
+
 /*
 ========================================================================================
 Copyright (c) 2005 - Gjermund Gusland Thorsen, released under the MIT License.

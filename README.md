@@ -2,6 +2,7 @@
 Convert PHP array to FMPXMLRESULT
 
 Example use
+===
 singular record
 ```php
 $tmp = array(

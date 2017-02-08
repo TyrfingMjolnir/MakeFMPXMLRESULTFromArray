@@ -2,24 +2,27 @@
 Convert PHP array to FMPXMLRESULT
 
 Example use
+```php
+$tmp = array(
+	'fieldname1' => 'fieldname1Content',
+	'fieldname2' => 'fieldname2Content'
+);
+
+MakeFMPXMLRESULTFromArray( $tmp );
+
 ```
+```php
 $tmp = array(
 	'fieldname1' => 'fieldname1Content',
 	'fieldname2' => 'fieldname2Content'
 );
-
-MakeFMPXMLRESULTFromArray( $tmp );
-
-
-
-$tmp = array(
-	'fieldname1' => 'fieldname1Content',
-	'fieldname2' => 'fieldname2Content'
+$array = array(
+	$tmp, $tmp, $tmp, $tmp, $tmp
 );
 
-MakeFMPXMLRESULTFromArray( $tmp );
-
-
+MakeFMPXMLRESULTFromArray( $array );
+```
+```
 /*
 ========================================================================================
 Copyright (c) 2005 - Gjermund Gusland Thorsen, released under the MIT License.

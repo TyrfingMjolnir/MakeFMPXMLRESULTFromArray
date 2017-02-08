@@ -2,6 +2,7 @@
 Convert PHP array to FMPXMLRESULT
 
 Example use
+singular record
 ```php
 $tmp = array(
 	'fieldname1' => 'fieldname1Content',
@@ -11,6 +12,7 @@ $tmp = array(
 MakeFMPXMLRESULTFromArray( $tmp );
 
 ```
+plural records
 ```php
 $tmp = array(
 	'fieldname1' => 'fieldname1Content',
